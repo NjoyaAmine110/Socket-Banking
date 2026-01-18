@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <ctype.h>
@@ -475,7 +474,7 @@ void get_account_no(char account_no[], const char prompt[])
         int size = strlen(test_account_no);
 
         
-        if(size =! 13)
+        if(size != 13)
         {
             clear_screen(); 
             printf("Account number must be 13 characters long.\n");
